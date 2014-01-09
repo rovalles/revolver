@@ -15,7 +15,7 @@
             //and if the container has no class it use an or defaults to a name
             var ele = $this.attr("class");
             var orig_ele = $this.attr("class");
-            ele = ele != undefined ? 'class="' +  this.className : 'id="' + this.id || 'ricochet';
+            ele = ele != undefined ? 'class="' +  this.className : 'id="' + this.id || 'revolver';
             var ele_i = ele.substr(0,1);
             ele = $this.length > 1 ? ele  +  '-wrapper-' + $this.index() : ele + '-wrapper' ;
             ele += '"';
@@ -161,7 +161,7 @@
         }
     };
      
-    $.fn.ricochet = function(options) {
+    $.fn.revolver = function(options) {
 
         //defaults options
         var defaults = {
@@ -172,7 +172,7 @@
 
         return this.each(function(){
             // If options exist, lets merge them with our default settings
-            var options = $.extend({}, $.fn.ricochet.defaults, options);  
+            var options = $.extend({}, $.fn.revolver.defaults, options);  
             var method = method || 'init';
             if ( methods[method] ) {
                 return methods[method].apply( this, Array.prototype.slice.call( arguments, 1));
