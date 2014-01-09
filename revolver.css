@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 18px
+
+}
+
+.revolver{
+    height: 500px;
+    width: 500px;
+    margin: 0 auto;
+}
+
+.revolver div{
+    border: 1px solid #000;
+    float: right;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+    background: #ff0000;
+}
+
+.revolver .current{
+    float: left;
+    width: 360px;
+    height: 500px;
+    background: #000000;
+}
+
+.pane-0{background: #444!important;}
+.pane-1{background: #133!important;}
+.pane-2{background: #882!important;}
+.pane-3{background: #611!important;}
+
+.next{cursor: pointer}
