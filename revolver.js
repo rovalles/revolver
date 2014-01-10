@@ -5,6 +5,8 @@
         --Need to add an exmaple format in comments
         --Need to create multiple exmples to see if I messed up somewhere else
     Clean Up Code
+    
+     $('.revolver').revolver();
 */
 (function( $ ){
     "use strict";
